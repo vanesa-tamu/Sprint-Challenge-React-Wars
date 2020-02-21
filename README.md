@@ -29,10 +29,13 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [ ] What does it mean to _think_ in react?
 
 - [ ] Describe state.
+        State is data at a specified point in time. This data can take the shape of any data structure and it changes/updates according to predefined parameters. 
 
 - [ ] Describe props.
+        Props is an object that has key value pairs. The key value pairs are determined by the programmer and by the application's use. 
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+        Side effects are what happen after a component has loaded. Hence, the side effect happens 'outside' of the component. The way to sync effects in a React component to state or props is by using the `useEffect()` hook. This function takes in two parameters, a callback and a dependancy array. It is in the dependancy array where a developer would place what key variables (ex. state variables or prop variables) the hook should `listen` for, i.e. for what specific variables' change in value in order for the hook to run. 
 
 ## Project Set Up
 
