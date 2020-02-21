@@ -27,12 +27,15 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
 - [ ] What does it mean to _think_ in react?
-
+        To think in React is to thnk about the code hierarchy and how the data will flow in an application. There is also an emphasis on the readability of the code since most developers spend more time on reading than on typing. The princiles of DRY are also integrated with the idea that componenets should be reusable and modular.
 - [ ] Describe state.
+        State is data at a specified point in time. This data can take the shape of any data structure and it changes/updates according to predefined parameters. 
 
 - [ ] Describe props.
+        Props is an object that has key value pairs. The key value pairs are determined by the programmer and by the application's use. 
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+        Side effects are what happen after a component has loaded. Hence, the side effect happens 'outside' of the component. The way to sync effects in a React component to state or props is by using the `useEffect()` hook. This function takes in two parameters, a callback and a dependancy array. It is in the dependancy array where a developer would place what key variables (ex. state variables or prop variables) the hook should `listen` for, i.e. for what specific variables' change in value in order for the hook to run. 
 
 ## Project Set Up
 
