@@ -3,7 +3,7 @@ import './App.css';
 import axios from 'axios'
 import {
   Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Container, Row, CardHeader
+  CardTitle, CardSubtitle, Container, Row, CardHeader, CardFooter, Col
 } from 'reactstrap';
 
 const App = () => {
@@ -28,17 +28,20 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <Container>
+      <Container className='char-container'>
         {data.map((char, index)=> {
           return (
-            <Card key={index} >
+            <Col xs='6' md='6' xl='6' key={index}>
+            <Card  className='card-container'>
               <CardHeader>{char.name}</CardHeader>
               <CardBody>
               <CardText>Birth Year: {char.birth_year}</CardText>
               <CardText>Height: {char.height}</CardText>
               <CardText>Eye Color: {char.eye_color}</CardText>
+              <CardText>Weight: {char.mass}</CardText>
               </CardBody>
             </Card>
+            </Col>
           )
         })}
       </Container>
