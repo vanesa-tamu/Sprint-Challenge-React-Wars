@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
 - [ ] What does it mean to _think_ in react?
-
+        To think in React is to thnk about the code hierarchy and how the data will flow in an application. There is also an emphasis on the readability of the code since most developers spend more time on reading than on typing. The princiles of DRY are also integrated with the idea that componenets should be reusable and modular.
 - [ ] Describe state.
         State is data at a specified point in time. This data can take the shape of any data structure and it changes/updates according to predefined parameters. 
 
